@@ -1,0 +1,142 @@
+#body{
+    background:#f5d9d5;
+    padding: 0px;
+}
+
+#navbar{
+    color:#EA1C2C;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#navbar::selection{
+    background-color: #D61C4E;
+    color: white;
+}
+
+#pages{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+#pages::selection{
+    background-color: #D61C4E;
+    color:white
+}
+
+#pages:hover{
+    color:#EA1C2C;
+    
+}
+
+#search{
+    color: #EA1C2C;
+    background:none;
+    border-color: #EA1C2C;
+    border-radius: 8px;
+    height: 2.5em;
+    transition: all 0.4s;
+    margin-right: 0px;
+}
+
+#search:hover{
+    color:white;
+    background:#EA1C2C;
+    border-color: #EA1C2C;
+    border-radius: 8px;
+    height: 2.5em;
+}
+
+#headinggroup span{
+    color:#EA1C2C;
+}
+
+#headinggroup span::selection{
+    background-color: #D61C4E;
+    color: white;
+}
+
+#headinggroup h1{
+    font-weight: 350;
+    font-size: 3rem;
+}
+
+#headinggroup h1::selection{
+    background-color: #D61C4E;
+    color: white;
+}
+
+#aboutcandy{
+    text-align: center;
+    font-size: large;
+    font-weight: 350;
+    color:#850E35;
+}
+
+#aboutcandy p{
+    color:#850E35;
+}
+
+#aboutcandy p::selection{
+    background-color: #D61C4E;
+    color: white;
+}
+
+#about{
+    padding-top: 90px;
+}
+
+@media (min-width: 991px){
+
+    #signup{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 991px){
+
+    #about p{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #signup{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 588px){
+
+    #about p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    #about p{
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#candylogo{
+    color:#850E35;
+}
+
+#signup{
+    background-color: none;
+    color: white;
+    border-color:white;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+#signup:hover{
+    background-color: #D61C4E;
+    transition: all 0.4s;
+}

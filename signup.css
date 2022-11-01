@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f5d9d5;
+}
+
+.section .container {
+    height: 500px;
+    width: 800px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1)
+}
+
+.section .container .form {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: absolute
+}
+
+.section .container .left-side {
+    width: 45%;
+    background-color: #fff;
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.section .container .left-side .brand {
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+.section .container .left-side .form-inputs {
+    padding: 25px
+}
+
+.section .container .left-side .form-inputs input {
+    position: relative;
+    width: 100%;
+    height: 50px !important;
+    padding: 0px 10px;
+    color: black;
+    border: 2px solid #eee;
+    outline: none;
+    margin: 5px 0;
+    box-shadow: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.5s;
+    background-color: #f5f5f5
+}
+
+.section .container .left-side .form-inputs input[type="submit"] {
+    cursor: pointer;
+    border-radius: 2px;
+    border-color: #EA1C2C;
+    border-radius: 5px;
+    background-color:none;
+    text-transform: uppercase;
+    width: 100px;
+    color: #EA1C2C;
+    margin-top: 22px
+}
+
+.section .container .left-side .form-inputs input[type="submit"]:hover {
+    background-color: #EA1C2C;
+    color:white;
+    border-color: white;
+}
+
+.section .container .left-side .form-inputs input:focus {
+    border: 2px solid #EA1C2C
+}
+
+.section .container .left-side .form-inputs input[type="submit"]:focus {
+    border: none
+}
+
+.section .container .left-side .form-inputs .login-text {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #EA1C2C
+}
+
+.random_password {
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-size: 9px
+}
+
+.form-inputs .password {
+    position: relative
+}
+
+.form-inputs .showpass {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    right: -13px;
+    top: 20px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.form-inputs .showpass img {
+    width: 15px;
+    transition: all 5s
+}
+
+.section .container .left-side .form-inputs p a {
+    text-decoration: none
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.brand img {
+    width: 20px
+}
+
+.brand small {
+    margin-left: 6px;
+    margin-top: 5px
+}
+
+.password p {
+    font-size: 15px;
+    position: absolute;
+    top: 58px;
+    left: 3px;
+    cursor: pointer;
+    display: none
+}
+
+.section .container .right-side {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.right-side h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1000
+}
+
+.right-side .circle1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #191A19;
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    transition: all 1s
+}
+
+.right-side .circle2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #191A19;
+    border-radius: 50%;
+    top: 250px;
+    right: 50px;
+    transition: all 1s;
+    transition-delay: 3s
+}
+
+.right-side .circle3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #191A19;
+    border-radius: 50%;
+    top: 50px;
+    right: 10px;
+    transition: all 1s;
+    transition-delay: 2s
+}
+
+.right-side:hover .circle1 {
+    height: 350px;
+    width: 350px
+}
+
+.right-side:hover .circle2 {
+    height: 250px;
+    width: 250px
+}
+
+.right-side:hover .circle3 {
+    height: 150px;
+    width: 150px
+}
+
+.section .container .right-side svg {
+    position: absolute;
+    bottom: 0
+}
+
+@media (max-width:750px) {
+    .section .container {
+        max-width: 350px
+    }
+
+    .section .container .right-side {
+        display: none
+    }
+
+    .section .container .left-side {
+        width: 100%
+    }
+}
